@@ -3,9 +3,9 @@ import { motion } from "motion/react";
 import { ArrowRight, Sparkles, Truck, ShieldCheck, Star } from "lucide-react";
 import { SiteLayout, Section } from "@/components/site/SiteLayout";
 import { ProductCard } from "@/components/site/ProductCard";
-import { products, services, testimonials, faqs, galleryImages } from "@/data/catalog";
+import { products, services, testimonials, faqs, galleryImages, realWork } from "@/data/catalog";
 import { brand, formatNaira, whatsappLink } from "@/lib/brand";
-import hero from "@/assets/hero.jpg";
+import { HeroSlideshow } from "@/components/site/HeroSlideshow";
 import {
   Accordion,
   AccordionContent,
@@ -56,6 +56,39 @@ export const Route = createFileRoute("/")({
     ],
   }),
 });
+
+const heroSlides = [
+  {
+    src: realWork.chevron,
+    alt: "Client wearing the Zuri chevron off-shoulder dress",
+    label: "From the collection",
+    caption: "Zuri Chevron Dress",
+  },
+  {
+    src: realWork.gele,
+    alt: "Traditional glam makeup with gele styling",
+    label: "Traditional glam",
+    caption: "Gele & Radiant Beat",
+  },
+  {
+    src: realWork.tracksuit,
+    alt: "Model wearing the Still Grind tracksuit set",
+    label: "Streetwear edit",
+    caption: "Still Grind Tracksuit",
+  },
+  {
+    src: realWork.floral,
+    alt: "Client wearing the Rosette floral halter dress",
+    label: "Everyday luxe",
+    caption: "Rosette Floral Dress",
+  },
+  {
+    src: realWork.traditional,
+    alt: "Couple styled in traditional outfits with bridal glam",
+    label: "Occasion styling",
+    caption: "Traditional Glam",
+  },
+];
 
 const fadeUp = {
   initial: { opacity: 0, y: 24 },
@@ -129,30 +162,8 @@ function Home() {
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative"
           >
-            <div className="absolute -left-8 -top-8 size-40 rounded-full bg-[var(--mint)] opacity-50 blur-3xl" />
-            <div className="absolute -bottom-10 -right-6 size-52 rounded-full bg-[var(--lavender)] opacity-50 blur-3xl" />
-            <img
-              src={hero}
-              alt="Model wearing a blush pink luxury gown from Chill Fit by Juliet Lux"
-              width={1280}
-              height={1600}
-              className="relative aspect-[4/5] w-full rounded-[2rem] object-cover shadow-luxe"
-            />
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -bottom-6 left-4 rounded-2xl border border-border/70 bg-background/90 px-5 py-4 shadow-soft backdrop-blur md:left-8"
-            >
-              <p className="font-button text-[0.6rem] uppercase tracking-[0.2em] text-muted-foreground">
-                Signature piece
-              </p>
-              <p className="mt-1 font-display text-base">Rose Luxe Gown</p>
-              <p className="font-button text-xs text-muted-foreground">
-                {formatNaira(65000)}
-              </p>
-            </motion.div>
+            <HeroSlideshow slides={heroSlides} />
           </motion.div>
         </div>
 

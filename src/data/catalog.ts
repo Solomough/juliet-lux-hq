@@ -8,6 +8,21 @@ import softglam from "@/assets/m-softglam.jpg";
 import bridal from "@/assets/m-bridal.jpg";
 import traditional from "@/assets/m-traditional.jpg";
 import studio from "@/assets/m-studio.jpg";
+import realTracksuit from "@/assets/real-tracksuit.jpg.asset.json";
+import realChevron from "@/assets/real-chevron-dress.jpg.asset.json";
+import realFloral from "@/assets/real-floral-dress.jpg.asset.json";
+import realTraditional from "@/assets/real-traditional-couple.jpg.asset.json";
+import realGele from "@/assets/real-gele-glam.jpg.asset.json";
+import realSoftGlam from "@/assets/real-soft-glam.jpg.asset.json";
+
+export const realWork = {
+  tracksuit: realTracksuit.url,
+  chevron: realChevron.url,
+  floral: realFloral.url,
+  traditional: realTraditional.url,
+  gele: realGele.url,
+  softGlam: realSoftGlam.url,
+};
 
 export type Product = {
   slug: string;
@@ -40,6 +55,45 @@ export const fashionCategories = [
 const STD = ["XS", "S", "M", "L", "XL"];
 
 export const products: Product[] = [
+  {
+    slug: "still-grind-tracksuit",
+    name: "Still Grind Tracksuit Set",
+    category: "Two Piece Sets",
+    price: 32000,
+    images: [realWork.tracksuit],
+    description:
+      "Our signature black tracksuit set with contrast piping and an embroidered chest badge. Relaxed, structured and made for everyday movement.",
+    sizes: STD,
+    colors: ["Black", "Charcoal"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    slug: "zuri-chevron-dress",
+    name: "Zuri Chevron Off-Shoulder Dress",
+    category: "Casual Dresses",
+    price: 26000,
+    images: [realWork.chevron],
+    description:
+      "A ruched off-shoulder dress in a bold coral chevron print. Soft stretch smocking that hugs beautifully and moves with you.",
+    sizes: STD,
+    colors: ["Coral Chevron", "Blue Chevron"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    slug: "rosette-floral-halter-dress",
+    name: "Rosette Floral Halter Dress",
+    category: "Casual Dresses",
+    price: 24000,
+    images: [realWork.floral],
+    description:
+      "A pink floral halter-neck midi with a hand-set rosette at the waist. Light, breezy and effortlessly photogenic.",
+    sizes: STD,
+    colors: ["Pink Floral"],
+    inStock: true,
+    featured: true,
+  },
   {
     slug: "aurora-crop-top",
     name: "Aurora Crop Top",
@@ -219,7 +273,7 @@ export const services: Service[] = [
     duration: "1 hour",
     description:
       "Our signature look — glowing skin, defined eyes and a soft lip. Elegant enough for any celebration.",
-    image: softglam,
+    image: realWork.softGlam,
     featured: true,
   },
   {
@@ -267,7 +321,7 @@ export const services: Service[] = [
     duration: "2 hours 30 minutes",
     description:
       "A full bridal experience including trial consultation, flawless long-wear base and touch-up guidance.",
-    image: bridal,
+    image: realWork.traditional,
     featured: true,
   },
   {
@@ -277,11 +331,17 @@ export const services: Service[] = [
     duration: "3 hours",
     description:
       "Rich, regal artistry crafted for traditional ceremonies, complete with gele styling coordination.",
-    image: traditional,
+    image: realWork.gele,
   },
 ];
 
 export const galleryImages = [
+  { src: realWork.chevron, alt: "Client in a chevron print off-shoulder dress from the collection", tag: "Fashion" },
+  { src: realWork.gele, alt: "Gele styling with radiant traditional glam makeup", tag: "Makeup" },
+  { src: realWork.tracksuit, alt: "Black piped tracksuit set styled in studio", tag: "Fashion" },
+  { src: realWork.traditional, alt: "Traditional couple glam and outfit styling", tag: "Transformations" },
+  { src: realWork.softGlam, alt: "Soft glam makeup finish with glossy lip", tag: "Makeup" },
+  { src: realWork.floral, alt: "Pink floral halter dress styled outdoors", tag: "Lifestyle" },
   { src: gown, alt: "Rose Luxe Gown editorial", tag: "Fashion" },
   { src: bridal, alt: "Bridal glam finish", tag: "Makeup" },
   { src: jeans, alt: "Nova baggie jeans styling", tag: "Fashion" },
