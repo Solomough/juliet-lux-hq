@@ -56,6 +56,45 @@ const STD = ["XS", "S", "M", "L", "XL"];
 
 export const products: Product[] = [
   {
+    slug: "still-grind-tracksuit",
+    name: "Still Grind Tracksuit Set",
+    category: "Two Piece Sets",
+    price: 32000,
+    images: [realWork.tracksuit],
+    description:
+      "Our signature black tracksuit set with contrast piping and an embroidered chest badge. Relaxed, structured and made for everyday movement.",
+    sizes: STD,
+    colors: ["Black", "Charcoal"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    slug: "zuri-chevron-dress",
+    name: "Zuri Chevron Off-Shoulder Dress",
+    category: "Casual Dresses",
+    price: 26000,
+    images: [realWork.chevron],
+    description:
+      "A ruched off-shoulder dress in a bold coral chevron print. Soft stretch smocking that hugs beautifully and moves with you.",
+    sizes: STD,
+    colors: ["Coral Chevron", "Blue Chevron"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    slug: "rosette-floral-halter-dress",
+    name: "Rosette Floral Halter Dress",
+    category: "Casual Dresses",
+    price: 24000,
+    images: [realWork.floral],
+    description:
+      "A pink floral halter-neck midi with a hand-set rosette at the waist. Light, breezy and effortlessly photogenic.",
+    sizes: STD,
+    colors: ["Pink Floral"],
+    inStock: true,
+    featured: true,
+  },
+  {
     slug: "aurora-crop-top",
     name: "Aurora Crop Top",
     category: "Crop Tops",
