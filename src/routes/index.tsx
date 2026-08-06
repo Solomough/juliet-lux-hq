@@ -65,22 +65,10 @@ const heroSlides = [
     caption: "Zuri Chevron Dress",
   },
   {
-    src: realWork.gele,
-    alt: "Traditional glam makeup with gele styling",
-    label: "Traditional glam",
-    caption: "Gele & Radiant Beat",
-  },
-  {
     src: realWork.tracksuit,
     alt: "Model wearing the Still Grind tracksuit set",
     label: "Streetwear edit",
     caption: "Still Grind Tracksuit",
-  },
-  {
-    src: realWork.floral,
-    alt: "Client wearing the Rosette floral halter dress",
-    label: "Everyday luxe",
-    caption: "Rosette Floral Dress",
   },
   {
     src: realWork.traditional,
