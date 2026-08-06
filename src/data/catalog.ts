@@ -273,7 +273,7 @@ export const services: Service[] = [
     duration: "1 hour",
     description:
       "Our signature look — glowing skin, defined eyes and a soft lip. Elegant enough for any celebration.",
-    image: softglam,
+    image: realWork.softGlam,
     featured: true,
   },
   {
@@ -321,7 +321,7 @@ export const services: Service[] = [
     duration: "2 hours 30 minutes",
     description:
       "A full bridal experience including trial consultation, flawless long-wear base and touch-up guidance.",
-    image: bridal,
+    image: realWork.traditional,
     featured: true,
   },
   {
@@ -331,7 +331,7 @@ export const services: Service[] = [
     duration: "3 hours",
     description:
       "Rich, regal artistry crafted for traditional ceremonies, complete with gele styling coordination.",
-    image: traditional,
+    image: realWork.gele,
   },
 ];
 
