@@ -297,6 +297,12 @@ export const services: Service[] = [
 ];
 
 export const galleryImages = [
+  { src: realWork.chevron, alt: "Client in a chevron print off-shoulder dress from the collection", tag: "Fashion" },
+  { src: realWork.gele, alt: "Gele styling with radiant traditional glam makeup", tag: "Makeup" },
+  { src: realWork.tracksuit, alt: "Black piped tracksuit set styled in studio", tag: "Fashion" },
+  { src: realWork.traditional, alt: "Traditional couple glam and outfit styling", tag: "Transformations" },
+  { src: realWork.softGlam, alt: "Soft glam makeup finish with glossy lip", tag: "Makeup" },
+  { src: realWork.floral, alt: "Pink floral halter dress styled outdoors", tag: "Lifestyle" },
   { src: gown, alt: "Rose Luxe Gown editorial", tag: "Fashion" },
   { src: bridal, alt: "Bridal glam finish", tag: "Makeup" },
   { src: jeans, alt: "Nova baggie jeans styling", tag: "Fashion" },
