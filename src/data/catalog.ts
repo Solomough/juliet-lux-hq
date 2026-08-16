@@ -8,20 +8,20 @@ import softglam from "@/assets/m-softglam.jpg";
 import bridal from "@/assets/m-bridal.jpg";
 import traditional from "@/assets/m-traditional.jpg";
 import studio from "@/assets/m-studio.jpg";
-import realTracksuit from "@/assets/real-tracksuit.jpg.asset.json";
-import realChevron from "@/assets/real-chevron-dress.jpg.asset.json";
-import realFloral from "@/assets/real-floral-dress.jpg.asset.json";
-import realTraditional from "@/assets/real-traditional-couple.jpg.asset.json";
-import realGele from "@/assets/real-gele-glam.jpg.asset.json";
-import realSoftGlam from "@/assets/real-soft-glam.jpg.asset.json";
+import realTracksuit from "@/assets/real-tracksuit.jpg";
+import realChevron from "@/assets/real-chevron-dress.jpg";
+import realFloral from "@/assets/real-floral-dress.jpg";
+import realTraditional from "@/assets/real-traditional-couple.jpg";
+import realGele from "@/assets/real-gele-glam.jpg";
+import realSoftGlam from "@/assets/real-soft-glam.jpg";
 
 export const realWork = {
-  tracksuit: realTracksuit.url,
-  chevron: realChevron.url,
-  floral: realFloral.url,
-  traditional: realTraditional.url,
-  gele: realGele.url,
-  softGlam: realSoftGlam.url,
+  tracksuit: realTracksuit,
+  chevron: realChevron,
+  floral: realFloral,
+  traditional: realTraditional,
+  gele: realGele,
+  softGlam: realSoftGlam,
 };
 
 export type Product = {
