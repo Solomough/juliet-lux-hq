@@ -267,9 +267,9 @@ function Home() {
             {/* Trust / business metrics */}
             <dl className="mt-12 grid max-w-md grid-cols-3 gap-4 border-t border-border/70 pt-7">
               {[
-                ["500+", "Happy clients"],
-                ["36", "States delivered"],
-                ["5.0", "Average rating"],
+                ["50+", "Happy clients"],
+                ["3", "States delivered"],
+                ["4.0", "Average rating"],
               ].map(([value, label]) => (
                 <div key={label}>
                   <dt className="font-display text-2xl">
