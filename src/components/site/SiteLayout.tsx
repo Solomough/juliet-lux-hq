@@ -3,7 +3,7 @@ import { Menu, MessageCircle, Instagram, Facebook, Music2, Ghost } from "lucide-
 import { useState, type ReactNode } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { brand, whatsappLink } from "@/lib/brand";
-import logo from "@/assets/juliet_brand.png.asset.json";
+import logo from "@/assets/juliet_brand.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -27,7 +27,7 @@ function Wordmark() {
   return (
     <Link to="/" className="flex items-center gap-3">
       <img
-        src={logo.url}
+        src={logo}
         alt="Chill Fit by Juliet Lux logo"
         width={64}
         height={64}
